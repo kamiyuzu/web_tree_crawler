@@ -17,7 +17,8 @@ defmodule WebTreeCrawler.MixProject do
         "coveralls.detail": :test,
         "coveralls.post": :test,
         "coveralls.html": :test
-      ]
+      ],
+      dialyzer: [plt_add_apps: [:ex_unit, :credo_naming]]
     ]
   end
 
