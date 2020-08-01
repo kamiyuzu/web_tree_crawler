@@ -1,0 +1,15 @@
+{
+  "skip_files": [
+    "test/",
+    "lib/web_tree_crawler_web/views/error_helpers.ex",
+    "lib/web_tree_crawler_web/views/error_view.ex",
+    "lib/web_tree_crawler_web/channels/",
+    "lib/web_tree_crawler/repo.ex",
+    "lib/web_tree_crawler.ex",
+    "lib/web_tree_crawler_web.ex",
+    "lib/web_tree_crawler_web/endpoint.ex",
+    "lib/web_tree_crawler_web/router.ex",
+    "lib/web_tree_crawler/application.ex",
+    "lib/web_tree_crawler_web/telemetry.ex"
+  ]
+}
