@@ -22,7 +22,7 @@ config :web_tree_crawler, WebTreeCrawler.Repo,
 
 # Configures the endpoint
 config :web_tree_crawler, WebTreeCrawlerWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "localhost", port: System.get_env("PORT") || 4000],
   secret_key_base: "MlS3tSRTAw7ZFNV88VNHbqpMMbmFGZD5fu4dgHhO3YvRhsIi3kRLynO2qEB051bB",
   render_errors: [view: WebTreeCrawlerWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: WebTreeCrawler.PubSub,
