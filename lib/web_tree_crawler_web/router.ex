@@ -7,6 +7,8 @@ defmodule WebTreeCrawlerWeb.Router do
 
   scope "/api", WebTreeCrawlerWeb do
     pipe_through :api
+
+    get("/status", StatusController, :index)
   end
 
   # Enables LiveDashboard only for development

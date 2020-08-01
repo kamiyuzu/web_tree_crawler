@@ -11,5 +11,8 @@
     "lib/web_tree_crawler_web/router.ex",
     "lib/web_tree_crawler/application.ex",
     "lib/web_tree_crawler_web/telemetry.ex"
-  ]
+  ],
+  "coverage_options": {
+    "minimum_coverage": 95
+  }
 }
