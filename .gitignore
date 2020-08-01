@@ -37,3 +37,6 @@ web_tree_crawler-*.tar
 
 # Don't include database files
 .db/
+
+# Don't include finder files
+.DS_Store
