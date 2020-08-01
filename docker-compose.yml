@@ -14,6 +14,21 @@ services:
     volumes:
       - ./.db:/var/lib/postgresql
 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "mix phx.server --no-halt"
+    restart: always
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    env_file:
+      - .env
+    ports:
+       - 4101:4101
+
 networks:
   default:
     external:
